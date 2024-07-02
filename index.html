@@ -7,10 +7,12 @@
   <title>Raghav's Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 
 <body>
-  <nav id="desktop-nav">
+  <nav id="desktop-nav" class="animate__animated animate__fadeInDown">
     <div class="logo">Raghav Khatri</div>
     <div>
       <ul class="nav-links">
@@ -21,7 +23,7 @@
       </ul>
     </div>
   </nav>
-  <nav id="hamburger-nav">
+  <nav id="hamburger-nav" class="animate__animated animate__fadeInDown">
     <div class="logo">Raghav Khatri</div>
     <div class="hamburger-menu">
       <div class="hamburger-icon" onclick="toggleMenu()">
@@ -37,23 +39,23 @@
       </div>
     </div>
   </nav>
-  <section id="profile">
-    <div class="section__pic-container">
+  <section id="profile" class="animate__animated animate__fadeIn">
+    <div class="section__pic-container" data-aos="fade-right">
       <img src="./assets/real-profile.png" alt="John Doe profile picture" />
     </div>
-    <div class="section__text">
+    <div class="section__text" data-aos="fade-left">
       <p class="section__text__p1">Hello, I'm</p>
       <h1 class="title">Raghav Khatri</h1>
       <p class="section__text__p2">Exploring Web Development</p>
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resume_latex_v2.11.pdf')">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume_v4.pdf')">
           Download CV
         </button>
         <button class="btn btn-color-1" onclick="location.href='./#contact'">
           Contact Info
         </button>
       </div>
-      <div id="socials-container">
+      <div id="socials-container" class="animate__animated animate__fadeInUp">
         <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
           onclick="window.open('https://www.linkedin.com/in/raghav-khatri-798947257/')" />
         <img src="./assets/github.png" alt="My Github profile" class="icon"
@@ -62,10 +64,12 @@
           onclick="window.open('https://codeforces.com/profile/raghavkhatri413')" />
         <img src="./assets/LeetCode_logo_black.png" alt="My Leetcode profile" class="icon"
           onclick="window.open('https://leetcode.com/u/raghavkhatri413rk/')" />
+        <img src="./assets/codechef_logo.png" alt="My CodeChef profile" class="icon"
+          onclick="window.open('https://www.codechef.com/users/khatriraghav14')" />
       </div>
     </div>
   </section>
-  <section id="about">
+  <section id="about" class="animate__animated animate__fadeInLeft" data-aos="fade-right">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
     <div class="section-container">
@@ -74,64 +78,59 @@
       </div>
       <div class="about-details-container">
         <div class="about-containers">
-          <div class="details-container">
+          <div class="details-container" data-aos="zoom-in">
             <img src="./assets/experience.png" alt="skills icon" class="icon" />
             <h3>Experience</h3>
             <p>I have worked on <br />several web development projects</p>
           </div>
-          <div class="details-container">
+          <div class="details-container" data-aos="zoom-in">
             <img src="./assets/education.png" alt="Education icon" class="icon" />
             <h3>Education</h3>
             <p>Pursuing B.tech in Electronics and Communication Engineering<br />at SVNIT(Expected 2026)</p>
           </div>
         </div>
         <div class="text-container">
-          <p>
+          <p data-aos="fade-up">
             👋 Hi, I'm Raghav Khatri, a DSA enthusiast and a web developer passionate about creating awesome things on
             the internet. I've mastered HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js, and React.js. Currently
             turning ideas into reality through hands-on projects. Let's code something amazing together! 🚀
-
-
-
-
-
-
           </p>
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow animate__animated animate__bounce"
+      onclick="location.href='./#skills'" />
   </section>
-  <section id="skills">
+  <section id="skills" class="animate__animated animate__fadeInRight">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Skills</h1>
     <div class="skills-details-container">
       <div class="about-containers">
-        <div class="details-container">
+        <div class="details-container" data-aos="fade-up">
           <h2 class="skills-sub-title">Frontend Development</h2>
           <div class="article-container">
-            <article>
+            <article class="animate__animated animate__fadeInUp">
               <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
               <div>
                 <h3>HTML</h3>
                 <p>Skilled</p>
               </div>
             </article>
-            <article>
+            <article class="animate__animated animate__fadeInUp">
               <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
               <div>
                 <h3>CSS</h3>
                 <p>Skilled</p>
               </div>
             </article>
-            <article>
+            <article class="animate__animated animate__fadeInUp">
               <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
               <div>
                 <h3>JavaScript</h3>
                 <p>Intermediate</p>
               </div>
             </article>
-            <article>
+            <article class="animate__animated animate__fadeInUp">
               <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
               <div>
                 <h3>Reactjs</h3>
@@ -140,41 +139,41 @@
             </article>
           </div>
         </div>
-        <div class="details-container">
+        <div class="details-container" data-aos="fade-up">
           <h2 class="skills-sub-title">Backend Development, Database and others</h2>
           <div class="article-container">
-            <article>
+            <article class="animate__animated animate__fadeInUp">
               <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
               <div>
                 <h3>PostgreSQL</h3>
                 <p>Basic</p>
               </div>
             </article>
-            <article>
+            <article class="animate__animated animate__fadeInUp">
               <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
               <div>
                 <h3>Node JS</h3>
                 <p>Intermediate</p>
               </div>
             </article>
-            <article>
+            <article class="animate__animated animate__fadeInUp">
               <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
               <div>
                 <h3>Express JS</h3>
                 <p>Intermediate</p>
               </div>
             </article>
-            <article>
+            <article class="animate__animated animate__fadeInUp">
               <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
               <div>
-                <h3>DSA</h3>
+                <h3>Python</h3>
                 <p>Intermediate</p>
               </div>
             </article>
-            <article>
+            <article class="animate__animated animate__fadeInUp">
               <img src="./assets/checkmark.png" alt="skills icon" class="icon" />
               <div>
-                <h3>Firebase</h3>
+                <h3>Java</h3>
                 <p>Intermediate</p>
               </div>
             </article>
@@ -182,15 +181,15 @@
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow animate__animated animate__bounce"
+      onclick="location.href='./#projects'" />
   </section>
-  <section id="projects">
+  <section id="projects" class="animate__animated animate__fadeInUp">
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="skills-details-container">
       <div class="about-containers">
-
-        <div class="details-container color-container">
+        <div class="details-container color-container animate__animated animate__fadeIn" data-aos="fade-up">
           <div class="article-container">
             <img src="./assets/Expense-tracker.png" alt="Expense tracker site image" class="project-img" />
           </div>
@@ -204,10 +203,33 @@
               onclick="window.open('https://expense-tracker-rk.netlify.app', '_blank')">
               Live Demo
             </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.linkedin.com/in/raghav-khatri-798947257/details/projects/', '_blank')">
+              More Info
+            </button>
           </div>
         </div>
 
-        <div class="details-container color-container">
+        <div class="details-container color-container animate__animated animate__fadeIn" data-aos="fade-up">
+          <div class="article-container">
+            <img src="./assets/livetab_pip_viewer.png" alt="LiveTab PiP viewer" class="project-img" />
+          </div>
+          <h2 class="skills-sub-title project-title">LiveTab PiP Viewer tool</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/raghavkhatri413/LiveTab-PiP-Viewer-Website', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://live-tab-pip-viewer-website.vercel.app/', '_blank')">
+              Live Demo
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.linkedin.com/in/raghav-khatri-798947257/details/projects/', '_blank')">
+              More Info
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container animate__animated animate__fadeIn" data-aos="fade-up">
           <div class="article-container">
             <img src="./assets/todolist-2.png" alt="Todolist using react" class="project-img" />
           </div>
@@ -221,10 +243,14 @@
               onclick="window.open('https://react-todo-list-v1-kc.netlify.app/', '_blank')">
               Live Demo
             </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.linkedin.com/in/raghav-khatri-798947257/details/projects/', '_blank')">
+              More Info
+            </button>
           </div>
         </div>
 
-        <div class="details-container color-container">
+        <div class="details-container color-container animate__animated animate__fadeIn" data-aos="fade-up">
           <div class="article-container">
             <img src="./assets/Personal_portfolio.png" alt="Personal Portfolio" class="project-img" />
           </div>
@@ -238,43 +264,32 @@
               onclick="window.open('https://raghavkhatri413.github.io/portfolio-v1/', '_blank')">
               Live Demo
             </button>
-          </div>
-        </div>
-
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/wip.png" alt="Project 4" class="project-img" />
-          </div>
-          <h2 class="skills-sub-title project-title">Project Four</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/', '_blank')">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/', '_blank')">
-              Live Demo
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.linkedin.com/in/raghav-khatri-798947257/details/projects/', '_blank')">
+              More Info
             </button>
           </div>
         </div>
-
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow animate__animated animate__bounce"
+      onclick="location.href='./#contact'" />
   </section>
-  <section id="contact">
+  <section id="contact" class="animate__animated animate__fadeInUp">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
     <div class="contact-info-upper-container">
-      <div class="contact-info-container">
+      <div class="contact-info-container" data-aos="fade-right">
         <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
         <p><a href="mailto:khatriraghav14@gmail.com">khatriraghav14@gmail.com</a></p>
       </div>
-      <div class="contact-info-container">
+      <div class="contact-info-container" data-aos="fade-left">
         <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
         <p><a href="https://www.linkedin.com/in/raghav-khatri-798947257/" target="_blank">LinkedIn</a></p>
       </div>
     </div>
   </section>
-  <footer>
+  <footer class="animate__animated animate__fadeInUp">
     <nav>
       <div class="nav-links-container">
         <ul class="nav-links">
@@ -289,7 +304,16 @@
       <p>&copy; 2024 Raghav Khatri. All rights reserved.</p>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="script.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  </script>
 </body>
 
 </html>
